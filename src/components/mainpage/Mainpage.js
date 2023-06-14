@@ -4,7 +4,7 @@ import {
   CardHeader,
   CardBody,
 
-  Typography,
+  div,
 
 } from "@material-tailwind/react";
 import { Fragment, useState } from "react";
@@ -39,16 +39,16 @@ function Mainpage() {
                   />
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="h4" color="blue-gray" className="mb-2">
+                  <div className="mb-2 text-5xl font-bold text-black">
                     Luật Sư Bach Lan
-                  </Typography>
-                  <Typography color="gray" className="font-normal mb-8">
+                  </div>
+                  <div color="gray" className="font-normal mb-8">
                     About About About About About About About About About About
                     About About About About About About About About About About
                     About About About About About About About About About About
                     About About About About About About About About About About
                     About About About About About About About About About About
-                  </Typography>
+                  </div>
                 </CardBody>
               </Card>
             </div>
@@ -59,38 +59,24 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Kế hoạch di sản
                       <br />
                       &nbsp;
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Estate Planning)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 1}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(1)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Việc lập kế hoạch di sản là cách sắp đặt trước tình hình
                         tài chính trước khi bản thân rơi vào trường hợp mất khả
                         năng tự quyết định hoặc tử vong. Kế hoạch này bao gồm
@@ -122,38 +108,27 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Chuyển nhượng bằng khoán
                       <br />
                       &nbsp;
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-2=0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-2=0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Deed of Conveyance)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 2}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(2)}
                       >
-                        Learn more
+                        <div>Learn more</div>
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody
+                        className="accordion-font"
+                        className="accordion-font"
+                      >
                         Trong bất động sản, chuyển nhượng bằng khoán - chẳng hạn
                         như nhà hoặc căn hộ chung cư - từ người chủ này sang
                         người khác được gọi là chuyển nhượng. Sự chuyển nhượng
@@ -176,38 +151,24 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Giấy Ủy Quyền
                       <br />
                       &nbsp;
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Power of Attorney)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 3}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(3)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Giấy Ủy Quyền (POA) này là một ủy quyền hợp pháp cho
                         phép một người được chỉ định những quyền hành động cho
                         người ủy thác. Như vậy, POA trao cho một người khác ,
@@ -227,36 +188,22 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Hợp đồng mua bán doanh nghiệp
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Purchase and Sell Business Agreements)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 4}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(4)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Luật sư hợp đồng kinh doanh thường sẽ xem xét, đàm phán
                         hoặc soạn thảo các thỏa thuận pháp lý theo luật pháp và
                         nhu cầu của khách hàng. Hợp đồng mua bán doanh nghiệp
@@ -285,36 +232,22 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Ly hȏn và quyền nuȏi dưỡng con trẻ
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Divorce and Child Custody)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 5}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(5)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Khi cuộc hôn nhân của bạn kết thúc và không còn cách nào
                         khác, ly hôn trong hòa bình là điều tốt nhất bạn có thể
                         làm cho bản thân và con cái. Đưa ra một quyết định lớn
@@ -338,34 +271,22 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Phó thác quyền chăm sóc sức khỏe
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Healthcare Surrogate and Advanced Directives)
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 6}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(6)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Ý nguyện cuối đời (Advanced Directives) hay còn gọi là
                         di chúc sống (Living Will) là một tài liệu pháp lý trong
                         đó bản thân một người, trong lúc còn minh mẫn, chỉ định
@@ -390,36 +311,22 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Tai nạn ô tô hoặc thương tích cá nhân
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Auto accident – Personal Injury)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 7}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(7)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Luật sư đại diện cho thân chủ trong một tai nạn ô tô
                         hoặc thương tích cá nhân yêu cầu bồi thường thương tích
                         cá nhân mà thân chủ họ bị thiệt hại về tài chính do sự
@@ -442,34 +349,22 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Thȏng dịch, công chứng, và hợp pháp hóa tài liệu
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">
                         (Translate, certified, and legalization documents)
-                      </Typography>
-                    </Typography>
+                      </div>
+                    </div>
                     <Accordion open={open === 8}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(8)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>
+                      <AccordionBody className="accordion-font">
                         Thị thực mọi văn bản và giấy khai sinh xác nhận sự chính
                         xác để có giá trị sử dụng ở Mỹ. Thủ tục hợp pháp hóa và
                         chứng nhận của lãnh sự quán phù hợp theo yêu cầu của mỗi
@@ -482,38 +377,24 @@ function Mainpage() {
               <div>
                 <Card className="w-96 service-card drop-shadow-lg">
                   <CardBody>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 py-0 font-bold text-2xl"
-                    >
+                    <div className="mb-0 py-0 font-bold text-2xl text-black">
                       BLANK SERVICE
                       <br />
                       &nbsp;
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      color="blue-gray"
-                      className="mb-0 font-bold text-2xl"
-                    >
-                      <Typography
-                        variant="h6"
-                        color="blue-gray"
-                        className="mb-0 font-bold "
-                      >
-                        (Blank)
-                        <br />
-                        &nbsp;
-                      </Typography>
-                    </Typography>
+                    </div>
+                    <div className="mb-0 font-bold text-2xl">
+                      <div className="mb-0 font-bold text-sm">(Blank)</div>
+                    </div>
                     <Accordion open={open === 9}>
                       <AccordionHeader
-                        className="text-sm py-0"
+                        className="text-sm py-0 accordion-font"
                         onClick={() => handleOpen(9)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody>Blank</AccordionBody>
+                      <AccordionBody className="accordion-font">
+                        Blank
+                      </AccordionBody>
                     </Accordion>
                   </CardBody>
                 </Card>

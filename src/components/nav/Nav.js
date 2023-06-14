@@ -37,8 +37,13 @@ export default function Nav() {
   return (
     <>
       <Navbar className="sticky inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-opacity-50 border-none">
-        <div className="flex items-center justify-between text-blue-gray-900">
-          <div className="text-3xl font-bold">Luật Sư Bach Lan</div>
+        <div className="flex items-center justify-between text-black">
+          <div className="text-3xl font-bold">
+            LUAT SU BACHLAN, LLC
+            <div className="text-sm">
+              Phone: (904) 859-7539 | Fax: (904) 458-8281
+            </div>
+          </div>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
 

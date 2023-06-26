@@ -11,13 +11,21 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0;
-  font-family: 'Georgia Pro Cond', sans-serif;
+  font-family:"Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #6C1A00,
+}
+.nav-color{
+  color:#6C1A00;
+  font-family: 'Georgia Pro Cond', sans-serif;
 }
 .translation{
   background-color: #b8b8b8;
   color:black;
+}
+.contact-button{
+  background-color: #9c9c9c;
 }
 
 

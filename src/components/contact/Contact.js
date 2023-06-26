@@ -55,26 +55,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="isolate px-6 py-24 sm:py-32 lg:px-8 text-black">
-      <div
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-        aria-hidden="true"
-      >
-        <div
-          className="relative"
-        />
-      </div>
+    <div className="isolate px-6 py-12 text-black">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Contact Me
         </h2>
       </div>
       <div>
-         {showSuccess && (
+        {showSuccess && (
           <div className="m-auto text-center text-bold text-lg">
             Message sent successfully!
           </div>
-         )}
+        )}
       </div>
       <form
         ref={formRef}
@@ -142,7 +134,7 @@ const Contact = () => {
         <div className="mt-10 flex justify-center items-center">
           <button
             type="submit"
-            className="block rounded-md  px-3.5 py-2.5 text-center text-sm font-semibold bg-gray-700 shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="contact-button block rounded-md  px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             {loading ? "Sending..." : "Send"}
           </button>

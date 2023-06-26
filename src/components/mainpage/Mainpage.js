@@ -22,7 +22,7 @@ function Mainpage() {
       };
       const [en, setEn] = useState(false)
     return (
-      <div className="flex h-screen m-auto pb-50 text-black">
+      <div className="flex h-screen m-auto pb-50 text-red">
         <div className="m-auto">
           <div className="flex px-2 m-auto mt-5 mb-10">
             <div className="flex m-auto">
@@ -39,20 +39,20 @@ function Mainpage() {
                   />
                 </CardHeader>
                 <CardBody className="overflow-y-auto">
-                  <div className="mb-2 text-5xl font-bold text-black">
+                  <div className="mb-2 text-5xl font-bold text-red">
                     Luật Sư Bach Lan
                     <button
                       onClick={() => {
                         setEn(!en);
                       }}
-                      className="translation hover:bg-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-sm ml-36 mt-1 align-top"
+                      className="translation hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-sm ml-36 mt-1 align-top"
                     >
                       {!en ? <>EN</> : <>VN</>}
                     </button>
                   </div>
                   <div
                     color="white"
-                    className="font-normal mb-8 overflow-y-auto text-black self-auto"
+                    className="font-normal mb-8 overflow-y-auto text-red self-auto"
                   >
                     {!en ? (
                       <>
@@ -118,12 +118,12 @@ function Mainpage() {
             </div>
           </div>
 
-          <div className="mb-10 text-black">
+          <div className="mb-10 text-red">
             <div className="m-auto grid gap-4 grid-cols-3 px-2">
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Kế hoạch di sản
                       <br />
                       &nbsp;
@@ -135,12 +135,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 1}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(1)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Việc lập kế hoạch di sản là cách sắp đặt trước tình hình
                         tài chính trước khi bản thân rơi vào trường hợp mất khả
                         năng tự quyết định hoặc tử vong. Kế hoạch này bao gồm
@@ -168,11 +168,10 @@ function Mainpage() {
                   </CardBody>
                 </Card>
               </div>
-
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Chuyển nhượng bằng khoán
                       <br />
                       &nbsp;
@@ -184,12 +183,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 2}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(2)}
                       >
                         <div>Learn more</div>
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Trong bất động sản, chuyển nhượng bằng khoán - chẳng hạn
                         như nhà hoặc căn hộ chung cư - từ người chủ này sang
                         người khác được gọi là chuyển nhượng. Sự chuyển nhượng
@@ -208,11 +207,10 @@ function Mainpage() {
                   </CardBody>
                 </Card>
               </div>
-
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Giấy Ủy Quyền
                       <br />
                       &nbsp;
@@ -224,12 +222,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 3}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(3)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Giấy Ủy Quyền (POA) này là một ủy quyền hợp pháp cho
                         phép một người được chỉ định những quyền hành động cho
                         người ủy thác. Như vậy, POA trao cho một người khác ,
@@ -247,9 +245,9 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Hợp đồng mua bán doanh nghiệp
                     </div>
                     <div className="mb-0 font-bold text-2xl">
@@ -259,12 +257,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 4}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(4)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Luật sư hợp đồng kinh doanh thường sẽ xem xét, đàm phán
                         hoặc soạn thảo các thỏa thuận pháp lý theo luật pháp và
                         nhu cầu của khách hàng. Hợp đồng mua bán doanh nghiệp
@@ -291,9 +289,9 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Ly hȏn và quyền nuȏi dưỡng con trẻ
                     </div>
                     <div className="mb-0 font-bold text-2xl">
@@ -303,12 +301,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 5}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(5)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Khi cuộc hôn nhân của bạn kết thúc và không còn cách nào
                         khác, ly hôn trong hòa bình là điều tốt nhất bạn có thể
                         làm cho bản thân và con cái. Đưa ra một quyết định lớn
@@ -330,9 +328,9 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Phó thác quyền chăm sóc sức khỏe
                     </div>
                     <div className="mb-0 font-bold text-2xl">
@@ -342,12 +340,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 6}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(6)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Ý nguyện cuối đời (Advanced Directives) hay còn gọi là
                         di chúc sống (Living Will) là một tài liệu pháp lý trong
                         đó bản thân một người, trong lúc còn minh mẫn, chỉ định
@@ -370,9 +368,9 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Tai nạn ô tô hoặc thương tích cá nhân
                     </div>
                     <div className="mb-0 font-bold text-2xl">
@@ -382,12 +380,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 7}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(7)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Luật sư đại diện cho thân chủ trong một tai nạn ô tô
                         hoặc thương tích cá nhân yêu cầu bồi thường thương tích
                         cá nhân mà thân chủ họ bị thiệt hại về tài chính do sự
@@ -407,10 +405,13 @@ function Mainpage() {
                   </CardBody>
                 </Card>
               </div>
+              <div className="m-auto text-center mb-0 col-start-2">
+                Office is located in Jacksonville, Florida.
+              </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+                <Card className="w-96 service-card drop-shadow-lg text-red ">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       Thȏng dịch, công chứng, và hợp pháp hóa tài liệu
                     </div>
                     <div className="mb-0 font-bold text-2xl">
@@ -420,12 +421,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 8}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(8)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Thị thực mọi văn bản và giấy khai sinh xác nhận sự chính
                         xác để có giá trị sử dụng ở Mỹ. Thủ tục hợp pháp hóa và
                         chứng nhận của lãnh sự quán phù hợp theo yêu cầu của mỗi
@@ -435,10 +436,10 @@ function Mainpage() {
                   </CardBody>
                 </Card>
               </div>
-              <div>
-                <Card className="w-96 service-card drop-shadow-lg text-black">
+              {/* <div>
+                <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>
-                    <div className="mb-0 py-0 font-bold text-2xl text-black">
+                    <div className="mb-0 py-0 font-bold text-2xl text-red">
                       BLANK SERVICE
                       <br />
                       &nbsp;
@@ -448,18 +449,18 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 9}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font text-black"
+                        className="text-sm py-0 accordion-font text-red"
                         onClick={() => handleOpen(9)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font text-black">
+                      <AccordionBody className="accordion-font text-red">
                         Blank
                       </AccordionBody>
                     </Accordion>
                   </CardBody>
                 </Card>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

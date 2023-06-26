@@ -7,6 +7,7 @@ module.exports = withMT({
     extend: {},
     colors: {
       pink: "##EBAFAA",
+      red: "#6C1A00",
     },
   },
   plugins: [],

@@ -1,7 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 function Footer() {
   return (
-    <div className="flex flex-wrap h-10">
+    <div className="flex flex-wrap h-10 text-black">
       <div className="w-full sticky bg-white mb-4">
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex flex-col md:flex-row md:items-center justify-center gap-y-2 bg-white text-center md:justify-between pb-4">

@@ -3,7 +3,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-
+  Button,
   div,
 
 } from "@material-tailwind/react";
@@ -20,13 +20,13 @@ function Mainpage() {
       const handleOpen = (value) => {
         setOpen(open === value ? 0 : value);
       };
-
+      const [en, setEn] = useState(false)
     return (
-      <div className="flex h-screen m-auto pb-50">
+      <div className="flex h-screen m-auto pb-50 text-black">
         <div className="m-auto">
           <div className="flex px-2 m-auto mt-5 mb-10">
             <div className="flex m-auto">
-              <Card className="flex-row w-full h-96 max-w-[74rem] service-card">
+              <Card className="flex-row w-full h-96 max-w-[74rem]">
                 <CardHeader
                   shadow={false}
                   floated={false}
@@ -38,26 +38,90 @@ function Mainpage() {
                     className="w-full h-full object-cover"
                   />
                 </CardHeader>
-                <CardBody>
+                <CardBody className="overflow-y-auto">
                   <div className="mb-2 text-5xl font-bold text-black">
                     Luật Sư Bach Lan
+                    <button
+                      onClick={() => {
+                        setEn(!en);
+                      }}
+                      className="translation hover:bg-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-sm ml-36 mt-1 align-top"
+                    >
+                      {!en ? <>EN</> : <>VN</>}
+                    </button>
                   </div>
-                  <div color="gray" className="font-normal mb-8">
-                    About About About About About About About About About About
-                    About About About About About About About About About About
-                    About About About About About About About About About About
-                    About About About About About About About About About About
-                    About About About About About About About About About About
+                  <div
+                    color="white"
+                    className="font-normal mb-8 overflow-y-auto text-black self-auto"
+                  >
+                    {!en ? (
+                      <>
+                        Tôi sinh ra và lớn lên ở miền Nam Việt Nam và di cư sang
+                        Mỹ vào ngày 30 tháng Tư năm 1993, cùng ngày chiến tranh
+                        Việt Nam kết thúc vào năm 1975. Năm tháng sau khi tôi
+                        chuyển đến Tucson, Arizona, tôi đại diện cho trường của
+                        mình trong một cuộc thi học sinh giỏi vòng quốc gia ở
+                        Washington, DC. Chúng tôi đã không thắng nhưng chắc chắn
+                        đã có một khoảng thời gian thật vui. Sau khi tôi kết hôn
+                        với chồng tôi, Andy, tôi đã mở một tiệm làm móng tay và
+                        anh ấy bắt đầu kinh doanh mua nhà củ sửa lại để bán lấy
+                        lời. Chồng tôi và tôi rất thoải mái về mặt tài chính
+                        nhưng vẩn không hài lòng với cuộc sống. Tôi quyết định
+                        quay trở lại trường học và Andy hỗ trợ tȏi hoàn toàn.
+                        Andy không chỉ chăm sóc hai đứa trẻ nhỏ và tôi mà còn
+                        điều hành cả hai công việc kinh doanh khi tôi học tại
+                        trường Đại học Arizona. Tôi đã tốt nghiệp xuất sắc với
+                        bằng cử nhân khoa học chính trị, được học Trường Luật
+                        Duyên Hải Florida trên phần Học bổng của Thống đốc, và
+                        tốt nghiệp trường luật với bằng danh dự. Kể từ khi được
+                        nhận vào Hội Đoàn Luật Sư của bang Florida Bar vào năm
+                        2009, tôi đã xử lý các vụ kiện liên quan đến thương tích
+                        cá nhân, tranh chấp dân sự, kiện tụng kinh doanh, vi
+                        phạm hợp đồng, và các vấn đề gia đình. Gia đình tôi và
+                        tôi đã đi du lịch nhiều nơi, nhưng không có nơi nào mà
+                        chúng tôi yêu thích nhiều như Jacksonville, Florida.
+                        Trong thời gian rảnh rỗi, tôi chăm sóc vườn hoa của mình
+                        và thu hoạch trái cây và rau quả từ vườn của Andy, hay
+                        là nhặt những quả trứng tươi từ chuồng gà của anh ấy.
+                      </>
+                    ) : (
+                      <>
+                        I was born and raised in South Vietnam and immigrated to
+                        the US on April 30, 1993, the same date the Vietnam War
+                        ended in 1975. Five months after my relocation to
+                        Tucson, Arizona, I represented my school in a national
+                        Academic competition in Washington, D. C. We didn’t win
+                        but sure did have a good time. After I married my
+                        husband, Andy, I opened a nail salon, and he started his
+                        house flipping business. My husband and I were doing
+                        really well financially but were not content. I decided
+                        to go back to school and also had Andy’s full support.
+                        Andy not just cared for the two toddlers and me but also
+                        ran both business while I was attending the University
+                        of Arizona. I managed to graduate cum laude with a
+                        bachelor’s degree in political science, attended Florida
+                        Coastal School of Law on Governor’s Scholarship, and
+                        graduated law school with honor. Since my admission to
+                        the Florida Bar in 2009, I have handled cases involving
+                        personal injury, civil disputes, business litigations,
+                        breach of contract, and family matters. My family and I
+                        have traveled to many places, but there is no other
+                        places that we love as much as Jacksonville, Florida. In
+                        my free time, I take care of my flower garden and
+                        harvest the fruits and vegetables from Andy’s garden or
+                        collect fresh eggs from his chicken coop.
+                      </>
+                    )}
                   </div>
                 </CardBody>
               </Card>
             </div>
           </div>
 
-          <div className="mb-10">
+          <div className="mb-10 text-black">
             <div className="m-auto grid gap-4 grid-cols-3 px-2">
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Kế hoạch di sản
@@ -71,12 +135,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 1}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(1)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Việc lập kế hoạch di sản là cách sắp đặt trước tình hình
                         tài chính trước khi bản thân rơi vào trường hợp mất khả
                         năng tự quyết định hoặc tử vong. Kế hoạch này bao gồm
@@ -106,7 +170,7 @@ function Mainpage() {
               </div>
 
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Chuyển nhượng bằng khoán
@@ -120,15 +184,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 2}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(2)}
                       >
                         <div>Learn more</div>
                       </AccordionHeader>
-                      <AccordionBody
-                        className="accordion-font"
-                        className="accordion-font"
-                      >
+                      <AccordionBody className="accordion-font text-black">
                         Trong bất động sản, chuyển nhượng bằng khoán - chẳng hạn
                         như nhà hoặc căn hộ chung cư - từ người chủ này sang
                         người khác được gọi là chuyển nhượng. Sự chuyển nhượng
@@ -149,7 +210,7 @@ function Mainpage() {
               </div>
 
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Giấy Ủy Quyền
@@ -163,12 +224,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 3}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(3)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Giấy Ủy Quyền (POA) này là một ủy quyền hợp pháp cho
                         phép một người được chỉ định những quyền hành động cho
                         người ủy thác. Như vậy, POA trao cho một người khác ,
@@ -186,7 +247,7 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Hợp đồng mua bán doanh nghiệp
@@ -198,12 +259,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 4}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(4)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Luật sư hợp đồng kinh doanh thường sẽ xem xét, đàm phán
                         hoặc soạn thảo các thỏa thuận pháp lý theo luật pháp và
                         nhu cầu của khách hàng. Hợp đồng mua bán doanh nghiệp
@@ -230,7 +291,7 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Ly hȏn và quyền nuȏi dưỡng con trẻ
@@ -242,12 +303,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 5}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(5)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Khi cuộc hôn nhân của bạn kết thúc và không còn cách nào
                         khác, ly hôn trong hòa bình là điều tốt nhất bạn có thể
                         làm cho bản thân và con cái. Đưa ra một quyết định lớn
@@ -269,7 +330,7 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Phó thác quyền chăm sóc sức khỏe
@@ -281,12 +342,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 6}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(6)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Ý nguyện cuối đời (Advanced Directives) hay còn gọi là
                         di chúc sống (Living Will) là một tài liệu pháp lý trong
                         đó bản thân một người, trong lúc còn minh mẫn, chỉ định
@@ -309,7 +370,7 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Tai nạn ô tô hoặc thương tích cá nhân
@@ -321,12 +382,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 7}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(7)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Luật sư đại diện cho thân chủ trong một tai nạn ô tô
                         hoặc thương tích cá nhân yêu cầu bồi thường thương tích
                         cá nhân mà thân chủ họ bị thiệt hại về tài chính do sự
@@ -347,7 +408,7 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       Thȏng dịch, công chứng, và hợp pháp hóa tài liệu
@@ -359,12 +420,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 8}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(8)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Thị thực mọi văn bản và giấy khai sinh xác nhận sự chính
                         xác để có giá trị sử dụng ở Mỹ. Thủ tục hợp pháp hóa và
                         chứng nhận của lãnh sự quán phù hợp theo yêu cầu của mỗi
@@ -375,7 +436,7 @@ function Mainpage() {
                 </Card>
               </div>
               <div>
-                <Card className="w-96 service-card drop-shadow-lg">
+                <Card className="w-96 service-card drop-shadow-lg text-black">
                   <CardBody>
                     <div className="mb-0 py-0 font-bold text-2xl text-black">
                       BLANK SERVICE
@@ -387,12 +448,12 @@ function Mainpage() {
                     </div>
                     <Accordion open={open === 9}>
                       <AccordionHeader
-                        className="text-sm py-0 accordion-font"
+                        className="text-sm py-0 accordion-font text-black"
                         onClick={() => handleOpen(9)}
                       >
                         Learn more
                       </AccordionHeader>
-                      <AccordionBody className="accordion-font">
+                      <AccordionBody className="accordion-font text-black">
                         Blank
                       </AccordionBody>
                     </Accordion>

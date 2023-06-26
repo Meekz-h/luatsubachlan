@@ -45,7 +45,7 @@ function Mainpage() {
                       onClick={() => {
                         setEn(!en);
                       }}
-                      className="translation hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-sm ml-36 mt-1 align-top"
+                      className="translation hover:bg-gray-100 text-gray-800 font-semibold px-2 py-2 border border-gray-400 rounded shadow text-sm ml-36 mt-1 align-top"
                     >
                       {!en ? <>EN</> : <>VN</>}
                     </button>
@@ -119,7 +119,7 @@ function Mainpage() {
           </div>
 
           <div className="mb-10 text-red">
-            <div className="m-auto grid gap-4 grid-cols-3 px-2">
+            <div className="m-auto grid gap-4 grid-cols-3">
               <div>
                 <Card className="w-96 service-card drop-shadow-lg text-red">
                   <CardBody>

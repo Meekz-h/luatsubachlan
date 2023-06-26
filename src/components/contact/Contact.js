@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="isolate px-6 py-12 text-black">
+    <div className="isolate px-6 py-10 text-black">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Contact Me

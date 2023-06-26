@@ -24,7 +24,7 @@ function Mainpage() {
     return (
       <div className="flex h-screen m-auto pb-50 text-red">
         <div className="m-auto">
-          <div className="flex px-2 m-auto mt-5 mb-10">
+          <div className="flex m-auto mt-5 mb-10">
             <div className="flex m-auto">
               <Card className="flex-row w-full h-96 max-w-[74rem]">
                 <CardHeader

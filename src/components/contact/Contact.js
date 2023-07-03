@@ -55,7 +55,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="isolate px-6 py-10 text-black">
+    <div className="isolate px-6 py-10 text-black mb-32">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Contact Me
@@ -87,7 +87,7 @@ const Contact = () => {
                 label="name"
                 name="name"
                 id="name"
-                placeholder="What is your name?"
+                placeholder="Bạn tên gì?"
                 value={form.name}
                 onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 text-black placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -107,7 +107,7 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What is your email?"
+                placeholder="Email của bạn là gì?"
                 className="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                 rows={7}
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What do you want to say?"
+                placeholder="Bạn có câu hỏi gì?"
                 className="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset text-black ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>

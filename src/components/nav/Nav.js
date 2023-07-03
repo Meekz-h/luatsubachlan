@@ -31,6 +31,7 @@ export default function Nav() {
           <Link to="/">Home</Link>
         </span>
       </div>
+   
     </ul>
   );
 

@@ -4,7 +4,7 @@
 @import url('https://fonts.cdnfonts.com/css/georgia-pro-cond');
 
 body {
-  background-color: #b8b8b8;
+  background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -17,13 +17,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #6C1A00,
 }
+.magicpattern, body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23c6c6c6%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23d4d4d4%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23d4d4d4%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23dedede%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23e3e3e3%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23eaeaea%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22d%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23f1f1f1%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23f4f4f4%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22e%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23fff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%23b8b8b8%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cpath d=%22M0 233c59.933 6.992 119.866 13.984 175 10s105.468-18.944 157-26c51.532-7.056 104.263-6.208 157 3 52.737 9.208 105.48 26.778 167 30 61.52 3.222 131.82-7.902 186-3 54.18 4.902 92.243 25.832 147 25 54.757-.832 126.21-23.426 183-42 56.79-18.574 98.919-33.129 154-19 55.081 14.129 123.114 56.942 181 61 57.886 4.058 105.623-30.638 159-33 53.377-2.362 112.393 27.61 169 32 56.607 4.39 110.803-16.805 205-38l-40 1167H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 466c59.119 20.665 118.237 41.33 170 38 51.763-3.33 96.17-30.654 154-49s129.083-27.714 185-13c55.917 14.714 96.5 53.511 151 56 54.5 2.489 122.919-31.33 182-41 59.081-9.67 108.826 4.808 157 2 48.174-2.808 94.777-22.901 155-19s134.065 31.797 190 47 93.962 17.714 144 9c50.038-8.714 112.087-28.654 171-31s114.69 12.901 171 16 113.155-5.95 210-15l-40 934H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 700c52.426 9.01 104.851 18.022 162 17 57.149-1.022 119.021-12.076 178-16 58.979-3.924 115.064-.717 173 7 57.936 7.717 117.722 19.943 168 16 50.278-3.943 91.048-24.056 144-34 52.952-9.944 118.085-9.72 179 0 60.915 9.72 117.612 28.933 168 31 50.388 2.067 94.469-13.012 153-17 58.531-3.988 131.514 3.117 189-5 57.486-8.117 99.477-31.455 152-35 52.523-3.545 115.578 12.701 173 22s109.211 11.65 201 14l-40 700H0Z%22 fill=%22url(%23c)%22%2F%3E%3Cpath d=%22M0 933c59.655 8.69 119.31 17.378 177 23s113.412 8.175 168 12c54.588 3.825 108.041 8.92 163-10s111.422-61.856 166-64c54.578-2.144 107.269 36.505 165 54 57.731 17.495 120.502 13.835 172 1 51.498-12.835 91.724-34.844 142-33 50.276 1.844 110.602 27.541 174 42 63.398 14.459 129.87 17.68 185 5 55.13-12.68 98.92-41.26 148-46 49.08-4.74 103.452 14.36 161 21 57.548 6.64 118.274.82 219-5l-40 467H0Z%22 fill=%22url(%23d)%22%2F%3E%3Cpath d=%22M0 1166c59.013-12.603 118.025-25.206 171-28 52.975-2.794 99.912 4.22 151 17 51.088 12.78 106.329 31.324 166 30 59.671-1.324 123.774-22.518 181-31s107.576-4.253 160-2c52.424 2.253 106.924 2.528 166 9 59.076 6.472 122.73 19.14 183 18 60.27-1.14 117.155-16.087 168-18 50.845-1.913 95.65 9.209 152 3 56.35-6.209 124.248-29.749 179-34 54.752-4.251 96.358 10.785 148 20 51.642 9.215 113.321 12.607 215 16l-40 234H0Z%22 fill=%22url(%23e)%22%2F%3E%3C%2Fsvg%3E");
+}
+
 .nav-color{
   color:#6C1A00;
   font-family: 'Georgia Pro Cond', sans-serif;
 }
-.translation{
-  background-color: #b8b8b8;
-  color:black;
+.footerclass{
+  position: relative;
+  left:0;
+  bottom:0;
+  right:0;
 }
 .contact-button{
   background-color: #9c9c9c;

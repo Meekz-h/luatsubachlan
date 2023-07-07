@@ -8,18 +8,30 @@ import {
   Card,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { handleEnChange } from "../../features/languageSlice";
+import { store } from "../../app/store";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 export default function Nav() {
+  const dispatch = useDispatch();
   const [openNav, setOpenNav] = React.useState(false);
-
+  const state = store.getState();
+  const { en } = useSelector((state) => state.language);
+  console.log("EN:",en)
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
-
+  console.log()
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <div className="text-red font-medium text-lg">
+        <span className="flex items-center">
+          <Link to="/practice-areas">Practice Areas</Link>
+        </span>
+      </div>
       <div className="text-red font-medium text-lg">
         <span className="flex items-center">
           <Link to="/contact">Contact</Link>
@@ -31,7 +43,11 @@ export default function Nav() {
           <Link to="/">Home</Link>
         </span>
       </div>
-   
+      <div className="text-red text-lg font-bold hover:text-gray-300">
+        <span className="flex items-center">
+          <button onClick={() => dispatch(handleEnChange())} className="text-red">{!en ? (<>EN</>) :(<>VN</>)}</button>
+        </span>
+      </div>
     </ul>
   );
 

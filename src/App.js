@@ -7,6 +7,7 @@ import Mainpage from "./components/mainpage/Mainpage.js"
 import Nav from "./components/nav/Nav.js";
 import Contact from "./components/contact/Contact.js";
 import Footer from "./components/nav/Footer.js";
+import PracticeAreas from "./components/services/Practice Areas.js";
 function App() {
   const [launchInfo, setLaunchInfo] = useState([]);
   const [error, setError] = useState(null);
@@ -19,6 +20,7 @@ function App() {
           <Route path="/">
             <Route index element={<Mainpage />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="practice-areas" element={<PracticeAreas/>}/>
           </Route>
         </Routes>
       </div>

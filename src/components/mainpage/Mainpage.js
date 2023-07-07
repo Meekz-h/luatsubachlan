@@ -3,9 +3,9 @@ import { Fragment, useState } from "react";
 import {
 
 } from "@material-tailwind/react";
-
+import { useSelector } from "react-redux/es/hooks/useSelector";
 function Mainpage() {
-   const [en, setEn] = useState(false);
+const { en } = useSelector((state) => state.language);
 
   return (
     <div className="flex m-auto pb-50 text-red mt-20">
@@ -15,21 +15,19 @@ function Mainpage() {
             <div className="">
               <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                 <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                  <p className="uppercase tracking-loose w-full">
+                  <p className="uppercase tracking-loose w-full text-center">
                     Luat Su Bach Lan
                   </p>
-                  <h1 className="my-4 text-5xl font-bold leading-tight">
+                  <h1 className="my-4 text-5xl font-bold leading-tight sm:m-auto">
                     Attorney Leslie <br />
                     Bachlan Ng
                   </h1>
-                  <p className="leading-normal text-2xl mb-8">
-
-                  </p>
+                  <p className="leading-normal text-2xl mb-8"></p>
                 </div>
 
                 <div className="w-full md:w-3/5 text-center">
                   <img
-                    className="md:w-4/5 z-50 ml-5 object-cover rounded-full h-96 w-24"
+                    className="md:w-3/5 sm:w-3/5 sm:h-4/5 z-50 ml-5 object-cover rounded-full h-96 w-24 sm:m-auto"
                     src={leslie}
                   />
                 </div>

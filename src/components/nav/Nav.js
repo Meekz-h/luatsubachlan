@@ -45,7 +45,7 @@ export default function Nav() {
       </div>
       <div className="text-red text-lg font-bold hover:text-gray-300">
         <span className="flex items-center">
-          <button onClick={() => dispatch(handleEnChange())} className="text-red">{!en ? (<>EN</>) :(<>VN</>)}</button>
+          <button onClick={() => dispatch(handleEnChange())} className="text-red">{!en ? (<>English</>) :(<>Vietnamese</>)}</button>
         </span>
       </div>
     </ul>
